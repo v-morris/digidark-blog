@@ -1,0 +1,17 @@
+body{
+    background-color: #F0EFE2;
+    color: #0F4C81
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: #0F4C81;
+}
+
+a{
+    color: #990011;
+    font-weight: 800;
+}
+
+a:hover{
+    color: #990011;
+}

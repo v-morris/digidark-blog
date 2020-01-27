@@ -7,15 +7,15 @@ class Layout extends React.Component {
   render() {
     const { location, title, children } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
-    let header
+    let header;
 
     if (location.pathname === rootPath) {
       header = (
-        <h1
+        <h2
           style={{
-            ...scale(1.5),
+            ...scale(1.2),
             marginBottom: rhythm(1.5),
-            marginTop: 0,
+            marginTop: 0
           }}
         >
           <Link
@@ -28,21 +28,21 @@ class Layout extends React.Component {
           >
             {title}
           </Link>
-        </h1>
+        </h2>
       )
     } else {
       header = (
         <h3
           style={{
-            fontFamily: `Montserrat, sans-serif`,
             marginTop: 0,
+            ...scale(0.5),
           }}
         >
           <Link
             style={{
               boxShadow: `none`,
               textDecoration: `none`,
-              color: `inherit`,
+              color: `inherit`
             }}
             to={`/`}
           >
@@ -62,10 +62,12 @@ class Layout extends React.Component {
       >
         <header>{header}</header>
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+        <footer style={{textAlign:`center`, paddingTop:`${rhythm(1.5)}`}}>
+          © {new Date().getFullYear()}, DigiDark Development<br/>
+          <a style={{color:`#990011`}} href="https://twitter.com/digidarkdev" target="_blank">Twitter</a>
+          &nbsp;&nbsp;
+          <a style={{color:`#990011`}} href="https://github.com/v-morris" target="_blank">Github</a>
+          
         </footer>
       </div>
     )

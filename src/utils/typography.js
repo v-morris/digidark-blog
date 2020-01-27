@@ -1,17 +1,19 @@
-import Typography from "typography"
-import Wordpress2016 from "typography-theme-wordpress-2016"
+import Typography from 'typography'
+import githubTheme from 'typography-theme-github'
+githubTheme.headerWeight = 800;
 
-Wordpress2016.overrideThemeStyles = () => {
+const typography = new Typography(githubTheme)
+
+githubTheme.overrideThemeStyles = () => {
   return {
     "a.gatsby-resp-image-link": {
       boxShadow: `none`,
-    },
+    }
   }
 }
 
-delete Wordpress2016.googleFonts
+// delete githubTheme.googleFonts
 
-const typography = new Typography(Wordpress2016)
 
 // Hot reload typography in development.
 if (process.env.NODE_ENV !== `production`) {
