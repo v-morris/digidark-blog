@@ -5,7 +5,7 @@ import styles from './index.module.css'
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
+import { rhythm, scale } from "../utils/typography"
 
 class BlogIndex extends React.Component {
   render() {
@@ -24,7 +24,8 @@ class BlogIndex extends React.Component {
               <header>
                 <h3
                   style={{
-                    marginBottom: rhythm(1 / 4),
+                    marginBottom: rhythm(1 / 6),
+                    ...scale(0.8)
                   }}
                 >
                   <Link style={{ boxShadow: `none` }} to={node.fields.slug}>

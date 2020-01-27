@@ -13,8 +13,8 @@ class Layout extends React.Component {
       header = (
         <h2
           style={{
-            ...scale(1.2),
-            marginBottom: rhythm(1.5),
+            ...scale(1),
+            marginBottom: rhythm(1),
             marginTop: 0
           }}
         >
@@ -35,7 +35,7 @@ class Layout extends React.Component {
         <h3
           style={{
             marginTop: 0,
-            ...scale(0.5),
+            ...scale(0.7),
           }}
         >
           <Link
@@ -62,7 +62,7 @@ class Layout extends React.Component {
       >
         <header>{header}</header>
         <main>{children}</main>
-        <footer style={{textAlign:`center`, paddingTop:`${rhythm(1.5)}`}}>
+        <footer style={{textAlign:`left`, paddingTop:`${rhythm(1.5)}`}}>
           © {new Date().getFullYear()}, DigiDark Development<br/>
           <a style={{color:`#990011`}} href="https://twitter.com/digidarkdev" target="_blank">Twitter</a>
           &nbsp;&nbsp;

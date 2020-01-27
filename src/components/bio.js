@@ -56,8 +56,8 @@ const Bio = () => {
                     {borderRadius: `50%`}
                 }/>
             <p>
-                Written by <strong>{author}</strong> (who is a pile of code). <br/>
-                A creative problem solver working in Java and JS. 
+                Personal blog by <a style={{color:`#990011`}} href="https://twitter.com/digidarkdev" target="_blank"><strong>{author}</strong></a>.<br/>
+                I'm a creative problem solver. 
             </p>
         </div>
     )
